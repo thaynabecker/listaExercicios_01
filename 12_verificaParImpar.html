@@ -5,10 +5,17 @@
     */
 
     //ENTRADA
-
+    function verificarparImpar(numero) {
+        if (numero % 2 == 0) {
+            alert("O número" + numero + " É par.");
+        } else {
+            alert("O número" + numero + " É ímpar.")
+        }
+    }
 
     //PROCESSAMENTO
-
+    let valorNumero = Number(prompt("Informe um número para verificar se é par ou ímpar:"));
+    verificarparImpar(valorNumero);
 
     //SAÍDA
 

@@ -5,11 +5,24 @@
     */
 
     //ENTRADA
-
+    function verificarPrimo(numero) {
+        if (numero < 2) {
+            alert("Esse número não é primo.");
+            return;
+        }
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                alert("Esse número não é primo.");
+                return;
+            }
+        }
+        alert("Esse número é primo.");
+    }
 
     //PROCESSAMENTO
-
-
+    let valorNumero = Number(prompt("Informe um número para verificr se é primo ou não:"));
+    verificarPrimo(valorNumero);
+    
     //SAÍDA
 
 </script>
